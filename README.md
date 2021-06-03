@@ -17,11 +17,17 @@ Debian OpenJDK 8
 From the admin console of Payara Server create a new JDBC connection pool called bookstore-pool with the following properties:
 
 Resource Type: javax.sql.DataSource
+<br>
 Datasource Classname: org.mariadb.jdbc.MariaDbDataSource
+<br>
 Initial and Minimum Pool Size:8
+<br>
 Maximum Pool Size: 32
+<br>
 Pool Resize Quantity: 2
+<br>
 Idle Timeout: 300
+<br>
 Max Wait Time: :60000
 
 Then create a JDBC resource called jdbc/bookstore with the following:
