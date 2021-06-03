@@ -9,7 +9,9 @@ To inject the spring facade into JSF managed beans, which are essentially CDI be
 This application has been tested on the following environment:
 
 Payara 5.193
+<br>
 MariaDB 10.3
+<br>
 Debian OpenJDK 8
 
 From the admin console of Payara Server create a new JDBC connection pool called bookstore-pool with the following properties:
