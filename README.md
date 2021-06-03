@@ -6,6 +6,8 @@ Specifically, there is an spring bean called BookService which serves as a facad
 
 To inject the spring facade into JSF managed beans, which are essentially CDI beans, producer methods are used and the spring bean is retrieved through application context dependency lookup. To satisfy the injection point from a CDI perspective, a custom annotation @BookServiceBean is used.
 
+There is no need for ContextLoaderListener in web.xml as the required spring beans are obtained through applicationContext which itself is initialized via a CDI Producer method.
+
 This application has been tested on the following environment:
 <br>
 Payara 5.193
